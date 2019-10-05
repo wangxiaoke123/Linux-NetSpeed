@@ -7,3 +7,6 @@ wget: command not found的解决方法:yum -y install wget 回车即可
 查看状态 ./tcp.sh
 
 需要按8，进行系统优化
+
+回程路由：wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+bash testrace.sh

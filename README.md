@@ -9,4 +9,8 @@ wget: command not found的解决方法:yum -y install wget 回车即可
 需要按8，进行系统优化
 
 回程路由：wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+
 bash testrace.sh
+
+硬件信息：
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash

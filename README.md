@@ -14,3 +14,7 @@ bash testrace.sh
 
 硬件信息：
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+
+服务器测速代码 
+
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -

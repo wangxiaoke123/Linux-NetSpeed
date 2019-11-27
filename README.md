@@ -4,6 +4,8 @@ wget: command not found的解决方法:yum -y install wget 回车即可
 
 bash: curl: command not found的解决方法:apt-get install curl  回车即可
 
+（如果还是不行用 sudo apt-get update；然后 sudo apt-get install curl）
+
 魔改版bbr加速：wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 
 查看状态 ./tcp.sh

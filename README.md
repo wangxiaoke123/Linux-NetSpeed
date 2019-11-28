@@ -2,9 +2,11 @@
 
 wget: command not found的解决方法:yum -y install wget 回车即可
 
-bash: curl: command not found的解决方法:apt-get install curl  回车即可
+如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl
 
-（如果还是不行用 sudo apt-get update；然后 sudo apt-get install curl）
+ubuntu/debian 系统安装 Curl 方法: apt-get update -y && apt-get install curl -y
+
+centos 系统安装 Curl 方法: yum update -y && yum install curl -y
 
 魔改版bbr加速：wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 

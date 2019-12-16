@@ -10,6 +10,8 @@ centos 系统安装 Curl 方法: yum update -y && yum install curl -y
 
 魔改版bbr加速：wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 
+bbrplus加速：wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
 查看状态 ./tcp.sh
 
 需要按8，进行系统优化

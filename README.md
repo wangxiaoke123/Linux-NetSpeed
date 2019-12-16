@@ -16,6 +16,8 @@ bbrplus加速：wget -N --no-check-certificate "https://raw.githubusercontent.co
 
 需要按8，进行系统优化
 
+执行  lsmod | grep bbr ，以检测 BBR 是否开启
+
 回程路由：wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
 
 bash testrace.sh

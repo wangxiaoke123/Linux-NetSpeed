@@ -28,3 +28,5 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/scr
 服务器测速代码 
 
 curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+
+查看端口是否被占用netstat -an |grep 80

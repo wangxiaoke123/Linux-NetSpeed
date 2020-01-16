@@ -30,3 +30,7 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/scr
 curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
 
 查看端口是否被占用netstat -an |grep 80
+
+查看端口是否开启 
+netstat -nupl (UDP类型的端口)
+netstat -ntpl (TCP类型的端口)

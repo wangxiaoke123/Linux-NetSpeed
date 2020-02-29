@@ -31,6 +31,8 @@ curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.p
 
 查看端口是否被占用lsof -i:53
 
+杀掉进程，查看端口对应的pid，例如为792 然后 kill -9 792
+
 查看端口是否开启 
 netstat -nupl (UDP类型的端口)
 netstat -ntpl (TCP类型的端口)

@@ -36,3 +36,7 @@ curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.p
 查看端口是否开启 
 netstat -nupl (UDP类型的端口)
 netstat -ntpl (TCP类型的端口)
+
+rm -rf  删除文件或文件夹
+
+mkdir aaa 在当前目录下创建 aaa 目录

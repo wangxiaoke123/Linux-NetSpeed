@@ -176,7 +176,7 @@ startbbrmod_nanqinlang(){
 #启用Lotserver
 startlotserver(){
 	remove_all
-	wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && chmod +x appex.sh && bash appex.sh install
+	wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/wangxiaoke123/serverSpeeder_Install/master/appex.sh && chmod +x appex.sh && bash appex.sh install
 	rm -f appex.sh
 	memory=`cat /proc/meminfo |grep 'MemTotal' |awk -F : '{print $2}' |sed 's/^[ \t]*//g' | awk  '{print $1}'`
 	memory1=`expr ${memory} / 1024`
@@ -232,7 +232,7 @@ remove_all(){
 	sed -i '/net.ipv4.tcp_timestamps/d' /etc/sysctl.conf
 	sed -i '/net.ipv4.tcp_max_orphans/d' /etc/sysctl.conf
 	if [[ -e /appex/bin/serverSpeeder.sh ]]; then
-		wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && chmod +x appex.sh && bash appex.sh uninstall
+		wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/wangxiaoke123/serverSpeeder_Install/master/appex.sh && chmod +x appex.sh && bash appex.sh uninstall
 		rm -f appex.sh
 	fi
 	clear

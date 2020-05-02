@@ -40,3 +40,5 @@ netstat -ntpl (TCP类型的端口)
 rm -rf  删除文件或文件夹
 
 mkdir aaa 在当前目录下创建 aaa 目录
+
+mv 解压目录 www     (命令是将该目录名称改为www)

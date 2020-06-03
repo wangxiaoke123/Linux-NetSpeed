@@ -44,3 +44,5 @@ mkdir aaa 在当前目录下创建 aaa 目录
 Linux自带解压命令 tar xvzf file.tar.gz
 
 mv 解压目录 www     (命令是将该目录名称改为www)
+
+安装php命令 ：apt install apache2 php

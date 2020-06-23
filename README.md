@@ -33,8 +33,10 @@ Ubuntu/Debian：
 ``` bash
 apt install -y wget zip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace* && chmod +x besttrace
 ``` 
-然后执行以下命令：./besttrace 你的本地ip -g cn
-
+然后执行以下命令：
+``` bash
+./besttrace 你的本地ip -g cn
+``` 
 硬件信息：
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
 

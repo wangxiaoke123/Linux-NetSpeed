@@ -18,8 +18,10 @@ bbrplus加速：wget -N --no-check-certificate "https://raw.githubusercontent.co
 
 执行  lsmod | grep bbr ，以检测 BBR 是否开启
 
-1.四网回程路由：wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
-
+### 1.四网回程路由：
+``` bash
+wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+```
 bash testrace.sh
 
 2.测试回程路由（国外到本地）：centos7+：yum install -y wget unzip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace4linux.zip && chmod +x  besttrace

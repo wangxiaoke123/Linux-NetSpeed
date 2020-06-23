@@ -8,11 +8,11 @@ ubuntu/debian 系统安装 Curl 方法: apt-get update -y && apt-get install cur
 
 centos 系统安装 Curl 方法: yum update -y && yum install curl -y
 
-魔改版bbr加速：
+### 魔改版bbr加速：
 ``` bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ``` 
-bbrplus加速：
+### bbrplus加速：
 ``` bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ``` 
@@ -41,17 +41,18 @@ apt install -y wget zip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip &
 ``` bash
 ./besttrace 你的本地ip -g cn
 ``` 
-硬件信息：
+### 硬件信息：
+``` bash
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
-
-服务器测速代码 
-
+``` 
+### 服务器测速代码 
+``` bash
 curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-
-测试国内多地的速度
-
+``` 
+### 测试国内多地的速度
+``` bash
 curl -O https://raw.githubusercontent.com/wangn9900/trojan/master/gospeed.sh && chmod +x gospeed.sh && ./gospeed.sh
-
+``` 
 查看端口是否被占用lsof -i:53
 
 杀掉进程，查看端口对应的pid，例如为792 然后 kill -9 792

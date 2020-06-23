@@ -18,9 +18,15 @@ bbrplus加速：wget -N --no-check-certificate "https://raw.githubusercontent.co
 
 执行  lsmod | grep bbr ，以检测 BBR 是否开启
 
-回程路由：wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+1.四网回程路由：wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
 
 bash testrace.sh
+
+2.测试回程路由（国外到本地）：centos7+：yum install -y wget unzip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace4linux.zip && chmod +x  besttrace
+
+Ubuntu/Debian：apt install -y wget zip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace* && chmod +x besttrace
+
+然后执行以下命令：./besttrace 你的本地ip -g cn
 
 硬件信息：
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
@@ -28,6 +34,10 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/scr
 服务器测速代码 
 
 curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+
+测试国内多地的速度
+
+curl -O https://raw.githubusercontent.com/wangn9900/trojan/master/gospeed.sh && chmod +x gospeed.sh && ./gospeed.sh
 
 查看端口是否被占用lsof -i:53
 

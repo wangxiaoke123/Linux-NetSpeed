@@ -20,16 +20,19 @@ bbrplus加速：wget -N --no-check-certificate "https://raw.githubusercontent.co
 
 ### 1.四网回程路由：
 ``` bash
-wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && bash testrace.sh
 ```
 ---
 
-bash testrace.sh
-
-2.测试回程路由（国外到本地）：centos7+：yum install -y wget unzip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace4linux.zip && chmod +x  besttrace
-
-Ubuntu/Debian：apt install -y wget zip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace* && chmod +x besttrace
-
+### 2.测试回程路由（国外到本地）：
+centos7+：
+``` bash
+yum install -y wget unzip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace4linux.zip && chmod +x  besttrace
+``` 
+Ubuntu/Debian：
+``` bash
+apt install -y wget zip && wget https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace* && chmod +x besttrace
+``` 
 然后执行以下命令：./besttrace 你的本地ip -g cn
 
 硬件信息：

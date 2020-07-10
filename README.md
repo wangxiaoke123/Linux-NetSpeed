@@ -71,8 +71,9 @@ mv 解压目录 www     (命令是将该目录名称改为www)
 
 生成100MB测试文件代码：dd if=/dev/urandom of=100mb.bin bs=1M count=100
 
-换源步骤：
+编辑hosts：vi /etc/hosts
 
+换源步骤：
 
 输入命令 nano /etc/apt/sources.list
 

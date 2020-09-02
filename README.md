@@ -80,3 +80,20 @@ mv 解压目录 www     (命令是将该目录名称改为www)
 将里面的东西注释掉，贴入镜像源代码
 
 Ctrl+X 退出保存
+
+## 使用 Docker 一键安装 HTML5 Speedtest
+
+首先安装 Docker
+``` bash
+curl -sSL https://get.docker.com/ | sh
+```
+``` bash
+systemctl start docker
+```
+``` bash
+systemctl enable docker
+```
+安装HTML5 Speedtest
+``` bash
+docker run -d -p 6688:80 ilemonrain/html5-speedtest:alpine
+```

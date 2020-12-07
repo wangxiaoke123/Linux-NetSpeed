@@ -10,6 +10,8 @@ centos 系统安装 Curl 方法: yum update -y && yum install curl -y
 
 ubuntu/debian出现和net相关功能不能使用时，需要安装net-tools 命令：apt-get update -y && apt-get install net-tools -y
 
+ubuntu出现You might want to run 'apt --fix-broken install' to correct these时，需要安装：apt-get --fix-broken install
+
 ### 魔改版bbr加速：
 ``` bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh

@@ -12,6 +12,8 @@ ubuntu/debian出现和net相关功能不能使用时，需要安装net-tools 命
 
 ubuntu出现You might want to run 'apt --fix-broken install' to correct these时（有时候证书安装出错也是这个原因），需要安装：apt-get --fix-broken install
 
+出现dpkg: error: dpkg frontend is locked by another process，需要执行：rm /var/lib/dpkg/lock,然后输入：dpkg --configure -a,重新启动
+
 ### 魔改版bbr加速：
 ``` bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh

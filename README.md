@@ -22,6 +22,16 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/wangxiaoke123/
 ``` bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ``` 
+### OpenVZ BBR debian/ubuntu加速
+``` 
+wget --no-check-certificate https://github.com/tcp-nanqinlang/lkl-rinetd/releases/download/1.1.0/tcp_nanqinlang-rinetd-debianorubuntu.sh
+bash tcp_nanqinlang-rinetd-debianorubuntu.sh
+```
+### OpenVZ BBR centos7加速
+```
+wget --no-check-certificate https://github.com/tcp-nanqinlang/lkl-rinetd/releases/download/1.1.0/tcp_nanqinlang-rinetd-centos.sh
+bash tcp_nanqinlang-rinetd-centos.sh
+```
 查看状态 ./tcp.sh
 
 需要按8，进行系统优化
